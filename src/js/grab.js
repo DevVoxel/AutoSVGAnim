@@ -7,6 +7,6 @@ for (let i = 0; i < vox.length; i++) {
     edit.insertRule(":root {--strokeDimension" + `${i}` + ":" + dim + ";}");
 
     let insert = document.styleSheets[0];
-    insert.insertRule("#vox path:nth-child(" + `${i}` + ") {stroke-dasharray: " + `${i}` + ";stroke-dashoffset: " + `${i}` + ";animation: line-anim 2s ease forwards;}");
+    insert.insertRule("#vox path:nth-child(" + `${i}` + ") {stroke-dasharray: --strokeDimension" + `${i}` + ";stroke-dashoffset: --strokeDimension" + `${i}` + "; animation: line-anim 7s ease forwards;}");
 }
 
