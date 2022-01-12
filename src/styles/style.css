@@ -10,7 +10,7 @@ body {
     background-color: rgb(3, 110, 143);
 }
 
-#vox {
+svg {
     position: absolute;
     top: 50%;
     left: 50%;
